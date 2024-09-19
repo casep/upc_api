@@ -1,17 +1,18 @@
 # upc_api
 Simple flask server to query UPC data
 
+# Load data
+```
+pip3 install --user -r requirements.txt  --break-system-packages
+rm -rf data/my_lite_store.db
+python3 ingest_data.py
+```
+
 # build image
 ```
 docker build . -t upc_api
 ```
 
-# Load data
-```
-pip3 install --user -r requirements.txt 
-rm -rf data/my_lite_store.db
-python3 ingest_data.py
-```
 
 # run image
 ```
