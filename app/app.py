@@ -19,5 +19,7 @@ def get_record(id):
         returnJson = json.dumps(item)
         return returnJson
     except:
-        return("Not valid code\n")
+        validity = "Not valid code\n"
+        nonValid = json.dumps(validity)
+        return(nonValid)
 
