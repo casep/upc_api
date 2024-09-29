@@ -10,7 +10,7 @@ python3 ingest_data.py
 
 # build image
 ```
-docker build . -t upc_api
+docker build . -t maxukcl/upc_api
 ```
 
 
