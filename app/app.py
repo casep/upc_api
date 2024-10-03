@@ -15,11 +15,11 @@ def get_record(id):
     try:
         disk_engine=create_engine('sqlite:///my_lite_store.db')
         upc_corpus=pd.read_sql_query('SELECT * FROM ean WHERE ean = '+id,disk_engine)
-        item = upc_corpus['name'][0] + "\n"
+        item = upc_corpus['name'][0]
         returnJson = json.dumps(item)
         return returnJson
     except:
-        validity = "Not valid code\n"
+        validity = "Not valid code"
         nonValid = json.dumps(validity)
         return(nonValid)
 
