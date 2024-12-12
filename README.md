@@ -16,10 +16,10 @@ docker build . -t maxukcl/upc_api
 
 # run image
 ```
-docker run --rm -p 5000:5000 upc_api
+docker run --rm -p 5000:5000 maxukcl/upc_api
 ```
 
 # query data
 ```
-curl http://localhost:5000/api/get/8852023003078
+curl -q -s http://localhost:5000/api/get/8001630003968 | jq
 ```
